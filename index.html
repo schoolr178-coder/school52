@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запорізька гімназія №52</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="background-blur"></div>
+
+    <header class="site-header">
+        <nav class="nav-left">
+            <button onclick="scrollToSection('hero')">
+                <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <span>ГОЛОВНА</span>
+            </button>
+            <button onclick="scrollToSection('slider-section')">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                <span>ПРО ШКОЛУ</span>
+            </button>
+            <button onclick="scrollToSection('footer')">
+                <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                <span>КОНТАКТИ</span>
+            </button>
+        </nav>
+
+        <div class="nav-center">
+            <a href="https://sites.google.com/grenyar52.ukr.education/school-52/%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0-%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0" target="_blank" class="text-btn">
+                Головний сайт школи
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <button onclick="jumpToAdmissionSlide()" class="text-btn">
+                Зарахування у 1 клас
+            </button>
+        </div>
+    </header>
+
+    <section id="hero" class="full-screen-section" style="position: relative;">
+        <div class="content-box hero-layout">
+            <div class="hero-logo-container">
+                <img src="assets/logonew.png" alt="Логотип" class="hero-logo">
+            </div>
+            <div class="hero-text">
+                <h1>Запорізька гімназія №52<br>Запорізької міської ради</h1>
+                <p>
+                    Освітнє середовище партнерства, довіри, інновацій.
+                </p>
+                
+                <button onclick="jumpToAdmissionSlide()" class="hero-cta-btn">
+                    Зарахування у 1 клас
+                </button>
+            </div>
+        </div>
+
+        <div class="scroll-down-container" onclick="scrollToSection('slider-section')">
+            <span class="scroll-text">гортайте далі</span>
+            <button class="slider-arrow scroll-arrow-btn">
+                <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            </button>
+        </div>
+    </section>
+
+    <section id="slider-section" class="full-screen-section slider-wrapper-section">
+        
+        <h2 class="slider-main-title">Топ-5 причин, чому ми обираємо Запорізьку гімназію №52</h2>
+
+        <div class="slider-wrapper">
+            <button class="slider-arrow prev" onclick="changeSlide(-1)">
+                <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+            </button>
+
+            <div class="content-box slider-container">
+                
+                <div class="slide active">
+                    <div class="slide-img">
+                        <img src="assets/SERED.png" alt="Освітнє середовище">
+                    </div>
+                    <div class="slide-text">
+                        <h3>Освітнє середовище нового покоління</h3>
+                        <p>
+                            Ми створили простір, де кожна дитина почувається впевнено.
+                            Поєднання сучасних технологій, безпеки та професіоналізму вчителів робить нашу гімназію ідеальним місцем для старту успішного майбутнього.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="assets/slide1.png" alt="Укриття">
+                    </div>
+                    <div class="slide-text">
+                        <h3>1. Сучасні класи в сучасному укритті</h3>
+                        <p>Ми вчимося у комфортних аудиторіях та відчуваємо себе безпечно навіть під час повітряних тривог.</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="assets/slide2.png" alt="Вчителі">
+                    </div>
+                    <div class="slide-text">
+                        <h3>2. Вчителі, які надихають</h3>
+                        <p>У нашій гімназії педагоги підтримують, мотивують і допомагають розкривати таланти.</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="assets/slide33.jpg" alt="Методи навчання">
+                    </div>
+                    <div class="slide-text">
+                        <h3>3. Сучасні методи навчання</h3>
+                        <p>Нам пропонують інтерактиви, що роблять уроки цікавими та ефективними та не дають нудьгувати.</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="assets/slide4.png" alt="Атмосфера">
+                    </div>
+                    <div class="slide-text">
+                        <h3>4. Дружня атмосфера</h3>
+                        <p>Тут легко знайти друзів і відчути себе частиною великої шкільної родини.</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="assets/slide5.png" alt="Розвиток">
+                    </div>
+                    <div class="slide-text">
+                        <h3>5. Можливості для розвитку</h3>
+                        <p>Ми отримуємо знання, що реально знадобляться у майбутньому — від софт-скілів до академічних перемог.</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="assets/photo.png" alt="Зарахування">
+                    </div>
+                    <div class="slide-text">
+                        <h3>Зарахування у 1 клас</h3>
+                        <p>
+                            Ми знаємо, як важливо обрати першу школу, де дитині буде комфортно та безпечно. 
+                            Запорізька гімназія №52 — це простір підтримки та поваги.
+                            Запрошуємо вас до нашої шкільної родини! Залиште контакти, і ми допоможемо вам пройти шлях зарахування без стресу.
+                        </p>
+                        <br>
+                        <a href="https://forms.gle/1xxUooLYh6uTEoF36" target="_blank" class="google-form-btn" style="text-align:center;">
+                            Заповнити Google Форму
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-img map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2677.7883768167285!2d35.19413427640639!3d47.84369297121256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc5d8e99b7a883%3A0x8d93dae923ab9b82!2z0KjQutC-0LvQsCDihJY1Mg!5e0!3m2!1sru!2sua!4v1765279947429!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="slide-text">
+                        <h3>Ми на мапі</h3>
+                        <p>м. Запоріжжя, вул. Шевченка, 241-В. <br><br>
+                           Зручне розташування та безпечне середовище для навчання.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="slider-arrow next" onclick="changeSlide(1)">
+                <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+            </button>
+        </div>
+
+    </section>
+
+    <footer id="footer" class="site-footer">
+        <div class="footer-links">
+            <a href="https://www.facebook.com/groups/555060428624359/" target="_blank">Facebook</a>
+            <a href="mailto:grenyar52@gmail.com">Email</a>
+        </div>
+        <p class="copyright">м. Запоріжжя-2026</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
